@@ -1,0 +1,22 @@
+proxies:
+  - name: "ViP🥇-1060081146_f74c"
+    type: "vless"
+    server: Snapp.ir
+    port: 80
+    uuid: "f78f416f-6bf6-4cda-a860-b13ec8c5ff72"
+    network: "ws"
+    encryption: "none"
+    udp: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "xnx.nexoratechcenter.ir"
+
+proxy-groups:
+  - name: auto
+    type: select
+    proxies:
+    - "ViP🥇-1060081146_f74c"
+
+rules:
+  - MATCH,auto
