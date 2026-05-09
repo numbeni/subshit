@@ -1,0 +1,22 @@
+proxies:
+  - name: "@Simorgh_Vpn--Behnia"
+    type: "vless"
+    server: snapp.ir
+    port: 80
+    uuid: "7f9a1fab-4144-433e-aa8d-3c26d3dae674"
+    network: "ws"
+    encryption: "none"
+    udp: true
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "simorgh.darerio.ir"
+
+proxy-groups:
+  - name: auto
+    type: select
+    proxies:
+    - "@Simorgh_Vpn--Behnia"
+
+rules:
+  - MATCH,auto
