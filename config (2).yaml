@@ -19,4 +19,5 @@ proxy-groups:
     - "ViP🌿-1060081146_e744"
 
 rules:
-  - MATCH,auto
+  - PROCESS-NAME,chrome.exe,auto
+  - MATCH,DIRECT
