@@ -1,22 +1,22 @@
 proxies:
-  - name: "ViP🌿-1060081146_e744"
+  - name: "ViP2-1060081146_9c4d"
     type: "vless"
     server: snapp.ir
     port: 80
-    uuid: "cdd630a6-2edc-4251-a576-8b50344a943f"
+    uuid: "ca4b3fc6-00fa-49f8-9d9a-95de96cbf918"
     network: "ws"
     encryption: "none"
     udp: true
     ws-opts:
       path: "/"
       headers:
-        Host: "pan71e.nexoratechcenter.ir"
+        Host: "pan111e.redordead.ir"
 
 proxy-groups:
   - name: auto
     type: select
     proxies:
-    - "ViP🌿-1060081146_e744"
+    - "ViP2-1060081146_9c4d"
 
 rules:
   - PROCESS-NAME,chrome.exe,auto
